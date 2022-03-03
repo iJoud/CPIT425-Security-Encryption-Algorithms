@@ -39,6 +39,8 @@ def Decrypt(cipherText, key):
 
 
 plainText = input('Input your message to encrypt: ').lower()
+# The key is all alphabet in special order you choose
+# examole of possible key: DKVQFIBJWPESCXHTMYAUOLRGZN
 key = input('Input monoalphabetic key: ').lower()
 
 ciperText = Encrypt(plainText, key)
