@@ -33,8 +33,7 @@ def Decrypt(cipherText, key):
                 break
 
     for i in range(len(cipherText)):
-        index = ConvertToNumber(ord(cipherText[i]))
-        OriginalText += ConvertToChar(InvertedKey[index])
+        OriginalText += ConvertToChar(InvertedKey[ConvertToNumber(ord(cipherText[i]))])
 
     return OriginalText
 
