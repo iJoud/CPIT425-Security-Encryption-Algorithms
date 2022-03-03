@@ -43,5 +43,5 @@ plainText = input('Input your message to encrypt: ').lower()
 key = input('Input monoalphabetic key: ').lower()
 
 ciperText = Encrypt(plainText, key)
-print(f'encrypted: {ciperText}\n'
+print(f'\nencrypted: {ciperText}\n'
       + f'decrypted: {Decrypt(ciperText, key)}')
