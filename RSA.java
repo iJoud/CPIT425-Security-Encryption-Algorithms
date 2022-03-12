@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  *
@@ -18,13 +13,11 @@ public class RSA {
     public static void main(String[] args) throws Exception {
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter plaintext to encrypt using RSA: " + str + "\n");
+        String plaintext;
+        System.out.println("Enter plaintext to encrypt using RSA: ");
 
-        //convert string to byte array 
-        byte[] utf8 = str.getBytes();
-        
-        // --------- RSA ---------
-        
+        plaintext = scan.nextLine();
+
         // Generate keys
         KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
         KeyPair myPair = generator.generateKeyPair();
@@ -32,7 +25,7 @@ public class RSA {
         Cipher c = Cipher.getInstance("RSA");
         
         c.init(Cipher.ENCRYPT_MODE, myPair.getPublic());
-        byte[] myEncryptedBytes = c.doFinal(utf8);
+        byte[] myEncryptedBytes = c.doFinal(plaintext.getBytes());
         String encryptedText = Base64.getEncoder().encodeToString(myEncryptedBytes);
 
         c.init(Cipher.DECRYPT_MODE, myPair.getPrivate());
