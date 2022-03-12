@@ -17,19 +17,10 @@ public class RSA {
 
     public static void main(String[] args) throws Exception {
 
-        String str = "Java programming language support the RSA and DES algorithms.";
         System.out.println("The plain text: " + str + "\n");
-        // --------- DES ---------
+
         //convert string to byte array 
         byte[] utf8 = str.getBytes();
-
-        KeyGenerator kg = KeyGenerator.getInstance("DES");
-        Key key = kg.generateKey();
-
-        //Create the Cipher object with DES algorithm
-        Cipher c = Cipher.getInstance("DES");
-
-
 
 
 
