@@ -17,15 +17,14 @@ public class RSA {
 
     public static void main(String[] args) throws Exception {
 
-        System.out.println("The plain text: " + str + "\n");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter plaintext to encrypt using RSA: " + str + "\n");
 
         //convert string to byte array 
         byte[] utf8 = str.getBytes();
-
-
-
         
         // --------- RSA ---------
+        
         // Generate keys
         KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
         KeyPair myPair = generator.generateKeyPair();
