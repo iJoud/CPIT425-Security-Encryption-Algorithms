@@ -6,6 +6,7 @@ Various Encryption Algorithms I've Implemented Using Java and Python for CPIT425
   ### Using Python:
   - [Monoalphabetic Cipher](https://github.com/iJoud/CPIT425-Security-Encryption-Algorithms/blob/main/Monoalphabetic.py)
   - [Caesar Cipher](https://github.com/iJoud/CPIT425-Security-Encryption-Algorithms/blob/main/Caesar%20Cipher.py)
+  - [Triple Data Encryption Standard (3DES)](https://github.com/iJoud/CPIT425-Security-Encryption-Algorithms/blob/main/Triple%20DES.py)
 
 
   ### Using Java:
