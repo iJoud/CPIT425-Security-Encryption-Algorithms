@@ -1,7 +1,7 @@
 from Crypto.Cipher import DES3
 from Crypto.Random import get_random_bytes
 
-Key =''
+Key = ''
 
 def Encrypte(plaintext):
     global cipher
@@ -29,7 +29,7 @@ def GenerateKey ():
 
 GenerateKey()
 plaintext = input('Enter message to encrypt: ')
-cipher = DES3.new(Key,DES3.MODE_EAX)
+cipher = DES3.new(Key, DES3.MODE_EAX)
 ciphertext, nonce = Encrypte(plaintext)
-originaltext = Decrypt (nonce, ciphertext)
-print(f'Generated Key: {Key}\nEncrypted Message : {cipher}, \nDecrypted Message : {originaltext}')
+originaltext = Decrypt(nonce, ciphertext)
+print(f'Generated Key : {Key} \nEncrypted Message : {cipher}, \nDecrypted Message : {originaltext}')
