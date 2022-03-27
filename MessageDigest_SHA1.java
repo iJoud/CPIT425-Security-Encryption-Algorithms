@@ -4,7 +4,7 @@ import java.io.*;
 import java.math.BigInteger;
 import java.util.*;
 
-public class MD {
+public class MessageDigest_SHA1 {
 
     public static void main(String args[]) throws Exception {
 
