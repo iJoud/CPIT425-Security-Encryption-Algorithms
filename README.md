@@ -11,6 +11,7 @@ Various Encryption Algorithms I've Implemented Using Java and Python for CPIT425
 
   ### Using Java:
   - [Data Encryption Standarded (DES)](https://github.com/iJoud/CPIT425-Security-Encryption-Algorithms/blob/main/Data%20Encryption%20Standard.java)
+  - [Message Digest, Using SHA-1](https://github.com/iJoud/CPIT425-Security-Encryption-Algorithms/blob/main/MessageDigest_SHA1.java)
   
 
 ## Asymmetric Cryptography Algorithms
